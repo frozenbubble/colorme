@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Dominant color extractor</title>
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+        <script src="app.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="content">
+            <h2>This page extracts the dominant colors from a given picture using k-means</h2>
+
+            <p>
+                <input type="text" id="imgUrl" />
+                <button onclick="loadPicture()">Get colors</button>
+            </p>
+
+            <p>
+                <img id="image" src="" onload="imgLoaded()"/>
+            </p>
+
+            <p>
+                <canvas height="50" width=" 80" ></canvas>
+            </p>
+        </div>
+    </body>
+</html>
